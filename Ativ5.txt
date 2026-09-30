@@ -1,0 +1,1 @@
+O id do contador não muda porque a classe tem o __iadd__, então o contador += 5 altera o próprio objeto e continua sendo o mesmo. Já no int, não existe __iadd__ desse jeito, então o n += 5 cria outro objeto com o novo valor e o id muda 
