@@ -1,5 +1,3 @@
-No codigo Inicial a leituras foi alterada porque remove() está removendo os valores da lista original
-
 def remover_negativos(numeros):
     resultado = []
 
