@@ -61,6 +61,48 @@
 #Questao 15 afirmaçao 5 [spec]
 """Funçoes permitem adicionar atributos proprios como somar.autor = "Ana" """
 
-#Questao 16
+Questão 16, Trecho A
+
+O problema é que o nome do atributo vem de uma string, então não pode ser acessado diretamente pelo ponto. O correto é usar getattr para acessar o atributo pelo nome que está na variável.
+if hasattr(objeto, nome_do_campo):    processar(getattr(objeto, nome_do_campo))
+
+
+
+Questão 16, Trecho B
+
+O problema é que todas as tarefas compartilham a mesma lista de etiquetas. Assim, uma alteração em uma tarefa pode afetar as outras. O correto é criar uma lista independente para cada tarefa.
+import typespadrao = types.SimpleNamespace(etiquetas=[])def criar_tarefa():    return types.SimpleNamespace(etiquetas=list(padrao.etiquetas))
+
+
+
+Questão 16, Trecho C
+
+O problema é que o código altera o valor de math.pi, podendo causar resultados inesperados no restante do programa. O correto é guardar o valor em uma variável própria.
+import mathpi = math.pi
+
+
+
+Questão 16, Trecho D
+
+O problema é que dir não é a melhor opção para verificar se um atributo existe. O correto é usar hasattr, que verifica diretamente se o objeto possui o atributo.
+if hasattr(tarefa, "prazo"):    usar(tarefa.prazo)
+
+
+
+Questão 17
+
+Um atributo é um nome associado a um objeto que representa uma característica ou guarda um valor. O dict é um dicionário que armazena os atributos de um objeto quando ele possui um. Um exemplo de objeto sem dict próprio é o número inteiro 10, que não possui um dicionário individual de atributos.
+
+Questão 18
+
+A função vars retorna o dicionário de atributos do objeto, quando ele possui um. Já a função dir retorna uma lista com os nomes dos atributos e métodos disponíveis, incluindo muitos herdados. O vars é usado para ver os dados armazenados, enquanto o dir serve para explorar os nomes disponíveis. A documentação informa que dir pode não retornar uma lista completa de todos os atributos.
+
+Questão 19
+
+O ponto é usado para acessar atributos com nomes conhecidos, como pessoa.nome. O getattr acessa um atributo usando uma string, o setattr cria ou altera um atributo, o hasattr verifica se ele existe e o delattr remove um atributo. Criar atributos usando nomes vindos de dados externos pode gerar atributos inesperados. Um erro de escrita na leitura normalmente gera AttributeError, enquanto na atribuição pode criar um atributo com nome errado sem gerar erro.
+
+Questão 20
+
+Religar um atributo significa fazer ele apontar para outro objeto, enquanto alterar o objeto significa modificar o próprio objeto. Por exemplo, tarefa.etiquetas.append("urgente") modifica a lista existente, e outros nomes que apontam para ela também enxergam a mudança. Já tarefa.etiquetas = ["nova"] faz o atributo apontar para uma lista nova, sem alterar a lista antiga. Isso acontece porque, no Python, os nomes são referências a objetos, e não cópias automáticas deles.
 
 
