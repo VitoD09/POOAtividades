@@ -1,0 +1,66 @@
+#Questao 1 Resposta letra A
+
+#Questao 2 Resposta letra C
+
+#Questao 3 Resposta letra D
+
+#Questao 4 Resposta letra D
+
+#Questao 5 Resposta letra A
+
+#Questao 6 Resposta letra E
+
+#Questao 7 Resposta letra B
+
+#Questao 8 Resposta letra C
+
+#Questao 9 Saida True, False e True
+"""O modulo math possui __dict__ mas o numero 10 nao e o pi ta no dicionario do modulo"""
+
+#Questao 10 Saida somar, Somar dois numeros, (10,) e ['autor':'Ana'}
+"""vars(somar) mostra so os atributos adicionados no dicionario da funçao, __name__,__dict__ e __defaults__ sao atributos da funcao mas nao estao nesse dicionario"""
+
+#Questao 11 Saida teste, 0, False, True e False
+
+#Questao 12 Saida ['urgente'], True
+"""os dois objetos compartilham a mesma lista, entao quando meche em um o outro altera tambem"""
+
+#questao 13 Saida ['a','b', ['a','b'], ['z']]
+"""A variavel esta tendo a referencia original, o append manipula a lista sem mudar o objeto, caso que acontece na atribuiçao tarefa.etiquetas = ['z'] fazendo o atributo referenciar outra lista"""
+
+#Questao 14 afirmaçao 1: [spec]
+"""O vars retorna o dicionario de atributos quando o objeto possui um"""
+
+#Questao 14 afirmaçao 2 [spec]
+"""Um modulo e um objeto e seus nomes podem ser acessados como atributos"""
+
+#Questao 14 afirmaçao 3 [spec]
+"""o acesso a um atributo inexistenmte gera AtributeError"""
+
+#Questao 14 afirmaçao 4 [impl]
+"""E algo do CPython nao depender de detalhes muito especificos da implementaçao"""
+
+#Questao 14 afirmaçao 5 [spec]
+"""A documentaçao mostra que dir serve para expl9oraçao e pode nao retornar uma lista completa"""
+
+#Questao 14 afirmaçao 6 [spec]
+"""O simpleNamespace permite criar atributos por atribuiçao"""
+
+#Questao 15 afirmaçao 1 [spec]
+"""O getarr retorna o padrao informado quando o atributo nao existe"""
+
+#Questao 15 afirmaçao 2 [spec]
+"""as alteraçoes no objeto modulo podem ser vistas por quem tem acesso a aquele objeto"""
+
+#Questao 15 afirmaçao 3 [impl]
+"""Pra evitar a dependendia tem que verificar diretamente os atributos"""
+
+#Questao 15 afirmaçao 4 [spec]
+"""O texto sublinhado inicial e uma convençao e nao bloqueia o acesso"""
+
+#Questao 15 afirmaçao 5 [spec]
+"""Funçoes permitem adicionar atributos proprios como somar.autor = "Ana" """
+
+#Questao 16
+
+
